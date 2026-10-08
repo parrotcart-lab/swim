@@ -1,0 +1,25 @@
+/* The app's own colours. */
+:root{
+  --ground:#F2F8FA; --surface:#fff; --line:#E3E7ED; --ink:#0B1220;
+  --muted:#5B6576; --accent-ink:#0B6E8A;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;padding:0 20px;background:var(--ground);color:var(--ink);
+  font:16px/1.55 system-ui,-apple-system,sans-serif;
+}
+main{max-width:640px;margin:0 auto;padding:48px 0 72px}
+h1{font-size:36px;line-height:1.1;margin:0 0 8px}
+h2{font-size:21px;margin:36px 0 10px}
+p,li{color:var(--ink)}
+.lede{color:var(--muted);font-size:17px;margin:0 0 8px}
+.updated{color:var(--muted);font-size:13px;margin:0 0 28px}
+a{color:var(--accent-ink)}
+code{font-size:14px}
+ul,ol{padding-left:20px}
+li{margin:6px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:22px 0}
+footer{border-top:1px solid var(--line);margin-top:44px;padding-top:18px;color:var(--muted);font-size:13px}
+@media (prefers-color-scheme:dark){
+  :root{--ground:#111416;--surface:#1A1E21;--line:#2A3035;--ink:#EEF0F2;--muted:#A5ACB3;--accent-ink:#6FD3EA}
+}
